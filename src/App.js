@@ -28,6 +28,8 @@ function App() {
           <div className="away">
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{awayScore}</div>
+            {/* Attempted to spin off Home and Away scores into their own components, but failed.  I'd need to read up 
+          on how to pass useState between components, and I'm not sure if that's possible or even a best practice */}
           </div>
         </div>
         <BottomRow />
@@ -69,8 +71,7 @@ function App() {
           >
             Away Field Goal
           </button>
-          
-          
+
           {
             // Played around with an input box to change team name.  Didn't work
             /* <input
@@ -78,7 +79,8 @@ function App() {
           value={teamName}
           placeholder="Set Home Team Name"
           onChange={()=>setHomeTeamName("")}
-          /> */}
+          /> */
+          }
         </div>
       </section>
     </div>
