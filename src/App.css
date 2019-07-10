@@ -1,3 +1,7 @@
+body {
+  background: red;
+}
+
 :root {
   --black: #0d0d0d;
   --red: #ff2d2b;
